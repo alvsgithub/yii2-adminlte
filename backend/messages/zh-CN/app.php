@@ -68,5 +68,10 @@ return [
     'Directly Input Time' => '可直接输入日期，格式：2015-01-01',
 
     'Blog' => '博客',
+    'Catalog' => '分类',
+    'Post' => '文章',
+    'Comment' => '评论',
+    'Tag' => '标签',
+
 
 ];

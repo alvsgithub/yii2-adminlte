@@ -1,5 +1,6 @@
 <?php
 return [
+    'name' => 'Yii2-Adminlte',
     'language' => 'zh-CN',
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
