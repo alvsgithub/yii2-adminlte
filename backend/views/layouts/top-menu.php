@@ -33,19 +33,19 @@ $menuItemsMain = [
         'items' => [
             [
                 'label' => '<i class="fa fa-user"></i> ' . Yii::t('app', 'Catalog'),
-                'url' => ['/blog/default/blog-catalog'],
+                'url' => ['/blog/blog-catalog'],
             ],
             [
                 'label' => '<i class="fa fa-user-md"></i> ' . Yii::t('app', 'Post'),
-                'url' => ['/blog/default/blog-post'],
+                'url' => ['/blog/blog-post'],
             ],
             [
                 'label' => '<i class="fa fa-user-md"></i> ' . Yii::t('app', 'Comment'),
-                'url' => ['/blog/default/blog-comment'],
+                'url' => ['/blog/blog-comment'],
             ],
             [
                 'label' => '<i class="fa fa-user-md"></i> ' . Yii::t('app', 'Tag'),
-                'url' => ['/blog/default/blog-tag'],
+                'url' => ['/blog/blog-tag'],
             ],
         ],
     ],
