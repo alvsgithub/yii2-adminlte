@@ -41,4 +41,4 @@ Themes:
 
 Preview:
 -------
-![Yii2-Adminlte](tests/yii2-adminlte.png)
+![Yii2-Adminlte](tests/yii2-adminlte.jpg)
