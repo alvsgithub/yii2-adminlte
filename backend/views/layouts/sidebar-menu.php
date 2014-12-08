@@ -26,11 +26,10 @@ echo Menu::widget(
                         'label' => Yii::t('app', 'User'),
                         'url' => ['/user/index'],
                         'icon' => 'fa fa-user',
-                        'visible' => (Yii::$app->user->identity->company_id > 1),
                     ],
                     [
                         'label' => Yii::t('app', 'Role'),
-                        'url' => ['/auth-role/index'],
+                        'url' => ['/role/index'],
                         'icon' => 'fa fa-lock',
                     ],
                 ],
@@ -47,7 +46,7 @@ echo Menu::widget(
                         'label' => Yii::t('app', 'User'),
                         'url' => ['/user/index'],
                         'icon' => 'fa fa-user',
-                        //'visible' => (Yii::$app->user->identity->company_id == 1),
+                        //'visible' => (Yii::$app->user->identity->username == 'admin'),
                     ],
                     [
                         'label' => Yii::t('app', 'Role'),
