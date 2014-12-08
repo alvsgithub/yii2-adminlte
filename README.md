@@ -15,18 +15,24 @@ If you do not have Composer, you may install it by following the instructions at
 3. Run command: `php requirements.php` and check the requirements.
 4. Run command: `php init` to initialize the application with a specific environment.
 5. Create a new database and adjust it configuration in `common/config/main-local.php` accordingly.
-6. Run command: `php init` to apply migrations with console commands:
+6. Run command: `yii migrate` to apply migrations with console commands:
 - m140608_201405_user_init : user table
 - m140608_201406_rbac_init : rabc 4 tables of auth_assignment, auth_item, auth_item_child, auth_rule. same to yiisoft/yii2/rbac/migrations/schema-mysql.sql
 - This will create tables needed for the application to work.
-- You also can use database dump `db.sql` from `my/path/to/yii2-adminlte/tests/yii2-adminlte.sql`, but however I recommend to use migrations.
+- You also can use database dump from `my/path/to/yii2-adminlte/tests/yii2-adminlte.sql`, but however I recommend to use migrations.
 
 
 Usage
 -----
-- Use the URL `http://yii2-start.domain` to access application frontend.
-- Use the URL `http://backend.yii2-start.domain` to access application backend.
+- Use the URL `http://yii2-adminlte.domain` to access application frontend.
+- Use the URL `http://backend.yii2-adminlte.domain` to access application backend.
 
+
+Advanced Rbac
+-------------
+- Run command: `yii migrate --migrationPath=@console/migrations/rbac` to add permission, add more rbac file here while your project growing.
+- To check weather show on top menu or side bar, add `'visible' => Yii::$app->user->can('readPost'),` in top-menu.php or sidebar-menu.php.
+- To check could run action. add `if(!Yii::$app->user->can('createPost')) throw new HttpException(500, 'No Auth');` in actionIndex, actionCreate, actionUpdate in XXXController.php file.
 
 Notes:
 ------
@@ -36,7 +42,7 @@ By default will be created one super admin user with login `admin` and password 
 Themes:
 -------
 - Application backend it's based on "AdminLTE" template. More detail about this nice template you can find [here](http://www.bootstrapstage.com/admin-lte/).
-- Application frontend it's based on "Flat Theme". More detail about this nice theme you can find [here](http://shapebootstrap.net/item/flat-theme-free-responsive-multipurpose-site-template/).
+- Application frontend with default Yii2 advanced frontend page.
 
 
 Preview:
