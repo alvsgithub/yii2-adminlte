@@ -40,14 +40,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'status',
                 'value' => $model->statusLabel,
             ],
-            [
-                'attribute' => 'created_at',
-                'value' => date('Y-m-d H:i:s', $model->created_at),
-            ],
-            [
-                'attribute' => 'updated_at',
-                'value' => date('Y-m-d H:i:s', $model->updated_at),
-            ],
+            'created_at:datetime',
+            'updated_at:datetime',
         ],
     ]) ?>
 

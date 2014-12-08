@@ -2,6 +2,7 @@
 return [
     'name' => 'Yii2-Adminlte',
     'language' => 'zh-CN',
+    'timeZone' => 'Asia/Shanghai',
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
         'authManager' => [
@@ -38,6 +39,13 @@ return [
                     'basePath' => '@app/messages'
                 ],*/
             ],
+        ],
+        'formatter' => [
+            'dateFormat' => 'yyyy-MM-dd',
+            'datetimeFormat' => 'yyyy-MM-dd HH:mm:ss',
+            'decimalSeparator' => ',',
+            'thousandSeparator' => ' ',
+            'currencyCode' => 'CNY',
         ],
     ],
 ];
