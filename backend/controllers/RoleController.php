@@ -105,6 +105,8 @@ class RoleController extends Controller
 
     public function actionDelete($name)
     {
+        if(!Yii::$app->user->can('deleteRole')) throw new HttpException(500, 'No Auth');
+
         if ($name) {
             if(!Auth::hasUsersByRole($name)) {
                 $auth = Yii::$app->getAuthManager();

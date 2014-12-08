@@ -48,6 +48,7 @@ $menuItemsMain = [
                 'url' => ['/blog/blog-tag'],
             ],
         ],
+        'visible' => Yii::$app->user->can('readPost'),
     ],
     [
         'label' => '<i class="fa fa-cog"></i> ' . Yii::t('app', 'Cms'),
