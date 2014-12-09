@@ -16,16 +16,16 @@ If you do not have Composer, you may install it by following the instructions at
 4. Run command: `php init` to initialize the application with a specific environment.
 5. Create a new database and adjust it configuration in `common/config/main-local.php` accordingly.
 6. Run command: `yii migrate` to apply migrations with console commands:
-- m140608_201405_user_init : user table
-- m140608_201406_rbac_init : rabc 4 tables of auth_assignment, auth_item, auth_item_child, auth_rule. same to yiisoft/yii2/rbac/migrations/schema-mysql.sql
-- This will create tables needed for the application to work.
-- You also can use database dump from `my/path/to/yii2-adminlte/tests/yii2-adminlte.sql`, but however I recommend to use migrations.
+   - m140608_201405_user_init : user table
+   - m140608_201406_rbac_init : rabc 4 tables of auth_assignment, auth_item, auth_item_child, auth_rule. same to yiisoft/yii2/rbac/migrations/schema-mysql.sql
+7. This will create tables needed for the application to work.
+8. You also can use database dump from `my/path/to/yii2-adminlte/tests/yii2-adminlte.sql`, but however I recommend to use migrations.
 
 
 Usage
 -----
-- Use the URL `http://yii2-adminlte.domain` to access application frontend.
-- Use the URL `http://backend.yii2-adminlte.domain` to access application backend.
+- Use the URL `http://yii2-adminlte.domain` point to `yii2-adminlte/frontend/web/` to access application frontend.
+- Use the URL `http://backend.yii2-adminlte.domain` point to `yii2-adminlte/backend/web/` to access application backend.
 
 
 Advanced Rbac
