@@ -32,7 +32,7 @@ Advanced Rbac
 -------------
 - Run command: `yii migrate --migrationPath=@console/migrations/rbac` to add permission, add more rbac file here while your project growing.
 - To check weather show on top menu or side bar, add `'visible' => Yii::$app->user->can('readPost'),` in top-menu.php or sidebar-menu.php.
-- To check could run action. add `if(!Yii::$app->user->can('createPost')) throw new HttpException(500, 'No Auth');` in actionIndex, actionCreate, actionUpdate in XXXController.php file.
+- To check could run action. add `if(!Yii::$app->user->can('createPost')) throw new HttpException(401, 'No Auth');` in actionIndex, actionCreate, actionUpdate in XXXController.php file.
 
 Notes:
 ------
