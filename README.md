@@ -53,6 +53,7 @@ Preview:
 Related:
 -------
 - [Yii2-Gii](https://github.com/funson86/yii2-gii) : Gii for Yii2-Adminlte
+- [Yii2-Setting](https://github.com/funson86/yii2-Setting) : Common Setting for Yii2
 - [Yii2-Blog](https://github.com/funson86/yii2-blog) : A Blog extension for Yii2
 - [Yii2-Cms](https://github.com/funson86/yii2-cms) : A Cms extension for Yii2
 
