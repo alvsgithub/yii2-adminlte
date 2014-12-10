@@ -23,13 +23,13 @@ echo Menu::widget(
                 'visible' => Yii::$app->user->can('readPost'),
                 'items' => [
                     [
-                        'label' => Yii::t('app', 'User'),
-                        'url' => ['/user/index'],
+                        'label' => Yii::t('app', 'Basic'),
+                        'url' => ['/basic/index'],
                         'icon' => 'fa fa-user',
                     ],
                     [
-                        'label' => Yii::t('app', 'Role'),
-                        'url' => ['/role/index'],
+                        'label' => Yii::t('app', 'Advanced'),
+                        'url' => ['/advanced/index'],
                         'icon' => 'fa fa-lock',
                     ],
                 ],
