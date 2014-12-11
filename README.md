@@ -2,7 +2,7 @@ Yii2-Adminlte
 ==========
 
 Backend user & password:
-Login: `demo`
+Login: `admin`
 Password: `qwe1234`
 
 Installation and getting started:
@@ -10,7 +10,7 @@ Installation and getting started:
 
 If you do not have Composer, you may install it by following the instructions at getcomposer.org.
 
-1. Run the following command: `php composer.phar create-project --prefer-dist --stability=dev funson86/yii2-adminlte yii2-adminlte` to install Yii2-Adminlte.
+1. Run the following command: `php composer.phar create-project --stability=dev funson86/yii2-adminlte yii2-adminlte` to install Yii2-Adminlte.
 2. Run command: `cd /my/path/to/yii2-adminlte/` and go to main application directory.
 3. Run command: `php requirements.php` and check the requirements.
 4. Run command: `php init` to initialize the application with a specific environment.
